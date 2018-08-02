@@ -17,9 +17,9 @@
 
 	function cadastroCoordenador($scope, $http) {
 		$http.post('https://sistemadematriculaufcg.herokuapp.com/api/coord/post', {
-			"idCoordenador": $scope.matricula,
-			"email": $scope.email,
-			"senha": $scope.senha1,
+				"idCoordenador": $scope.matricula,
+				"email": $scope.email,
+				"senha": $scope.senha1
 		}).then(function (success) {
 			alert("Coordenador cadastrado com sucesso!");
 		}, function (error) {

@@ -18,10 +18,10 @@
     app.controller('DisciplinaCtrl', function DisciplinaCtrl($scope, $http) {
         $scope.id = null;
         $scope.nome = null;
-        $scope.numeroDeCreditos = 0;
-        $scope.cargaHoraria = 0;
-        $scope.grade = 0;
-        $scope.vagas = 0;
+        $scope.numeroDeCreditos = null;
+        $scope.cargaHoraria = null;
+        $scope.grade = null;
+        $scope.vagas = null;
 
         $scope.envio = () => {
             if ($scope.id > 0 && $scope.numeroDeCreditos > 0 &&

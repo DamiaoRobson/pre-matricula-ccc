@@ -2,7 +2,7 @@
     const app = angular.module('pre_matricula');
 
     function loginAluno($scope, $http) {
-		$http.post('https://sistemadematriculaufcg.herokuapp.com/api/aluno/login',{
+        $http.post('https://sistemadematriculaufcg.herokuapp.com/api/aluno/login', {
 			"email": $scope.email,
 			"senha": $scope.senha,
 		}).then(function (success) {

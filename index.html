@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pré-matrícula</title>
-  <link th:href="@{/../static/icon/ccc.png}" rel="icon">
+  <link th:href="@{/static/icon/ccc.png}" href="static/icon/ccc.png" rel="icon">
 
   <link rel="stylesheet" th:href="@{/static/css/materialize}" href="static/css/materialize.css">
   <link rel="stylesheet" th:href="@{/static/css/geral}" href="static/css/geral.css">
@@ -47,7 +47,6 @@
     </div>
 
     <form action="tipoCadastro">
-      {{tipoCadastro}}
         <p>
           <label>
             <input ng-model="tipoCadastro" name="group1" type="radio" id="aluno" value="aluno" checked />
